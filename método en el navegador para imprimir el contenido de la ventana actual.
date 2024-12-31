@@ -1,0 +1,16 @@
+JavaScript Imprimir
+JavaScript no tiene ningún objeto de impresión ni métodos de impresión.
+
+No se puede acceder a los dispositivos de salida desde JavaScript.
+
+La única excepción es que puedes llamar al window.print()método en el navegador para imprimir el contenido de la ventana actual.
+
+Ejemplo
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="window.print()">Print this page</button>
+
+</body>
+</html>
