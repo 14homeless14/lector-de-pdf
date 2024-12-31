@@ -9,3 +9,50 @@
 //JavaScript puede ocultar elementos HTML
 document.getElementById("demo").style.display = "none";
 
+como llamar un archico externo
+JavaScript externo
+Los scripts también se pueden colocar en archivos externos:
+
+Archivo externo: myScript.js
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+Los scripts externos son prácticos cuando se utiliza el mismo código en muchas páginas web diferentes.
+
+Los archivos JavaScript tienen la extensión de archivo .js .
+
+Para utilizar un script externo, coloque el nombre del archivo de script en el srcatributo (fuente) de una <script>etiqueta:
+
+Ejemplo
+<script src="myScript.js"></script>
+Puedes colocar una referencia de script externa en <head>o <body>como desees.
+
+El script se comportará como si estuviera ubicado exactamente donde <script>se encuentra la etiqueta.
+Usando document.write()
+Para fines de prueba, es conveniente utilizar document.write():
+Ejemplo
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+<script>
+document.write(5 + 6);
+</script>
+</body>
+</html>
+
+
+El uso de document.write() después de cargar un documento HTML eliminará todo el HTML existente el siguiente ejemplo lo ejemplifica mejor:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+</body>
+</html>
+El método document.write() sólo debe utilizarse para realizar pruebas.
